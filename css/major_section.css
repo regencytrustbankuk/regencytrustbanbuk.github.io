@@ -1,0 +1,570 @@
+#major_mid_section{
+    /* box-shadow: 0px 0px 5px red; */
+    margin: 3rem 0rem;
+    background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.3)), url(../gallery/pics/major_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+    min-height: 50dvh;
+    /* width: 100%; */
+
+}
+
+.major_section{
+    /* box-shadow: 0px 0px 5px red; */
+    margin: 4rem 0rem;
+}
+
+.major_section ul{
+    list-style: none;
+    display: flex;
+}
+
+.major_slider ul{
+    justify-content: space-evenly;
+    gap: 2rem;
+    background-color: white;
+    padding: 3rem 2rem;
+}
+
+.major_slider ul li{
+    box-shadow: 0px 0px 2px black;
+    background-color: whitesmoke;
+    width: 20%;
+    min-height: 30dvh;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.major_slider ul li:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 2px var(--main-red);
+}
+
+.major_slider ul li img{
+    display: flex;
+    margin: 1rem auto;
+}
+
+.major_slider ul li h3{
+    margin: 1rem 0rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.major_slider ul li span{
+    display: inline-block;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.my_mortage_home{
+    position: relative;
+    padding: 1rem 10rem;
+}
+
+.my_mortage_home section{
+    position: absolute;
+    top: 30%;
+    left: 12rem;
+}
+
+.my_mortage_home section h2{
+    font-size: 4rem;
+    margin: 2rem 0rem;
+}
+
+.my_mortage_home section span{
+    display: block;
+    font-size: 1.3rem;
+    margin: 1rem 0rem;
+}
+
+.my_mortage_home img{
+    width: 100%;
+    object-fit: cover;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+}
+
+.mid_way_toggle{
+    background-color: white;
+    padding: 3rem 2rem;
+}
+
+.mid_way_toggle h2{
+    font-size: 2rem;
+    margin: 0rem 0rem 4rem 0rem;
+    text-align: center;
+    background-color: darkred;
+    color: white;
+    padding: 0.5rem 0.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.mid_way_toggle ul{
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+}
+
+.mid_way_toggle ul li{
+    width: 30%;
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.mid_way_toggle ul li:nth-child(even){
+    background-color: whitesmoke;
+    box-shadow: -2px 1px 3px black;
+    transform: scale(1.1);
+    /* border-radius: 10px; */
+}
+
+.mid_way_toggle ul li:hover{
+    background-color: whitesmoke !important;
+    box-shadow: -2px 1px 3px black !important;
+    transform: scale(1.1) !important;
+    /* border-radius: 10px !important; */
+}
+
+.mid_way_toggle ul:hover > li {
+    background-color: transparent;
+    box-shadow: 0px 0px 2px transparent;
+    transform: scale(1);
+    border-radius: 0px;
+}
+
+.mid_way_toggle ul li img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    padding: 2px;
+    box-shadow: 1px -1px 2px var(--secondary-red), -1px 1px 2px var(--main-color);
+    border-radius: 5px;
+}
+
+.mid_way_toggle ul li h3{
+    font-size: 1.5rem;
+    margin: 1rem 0rem;
+}
+
+/*  */
+@media (max-width:1030px) {
+    #major_mid_section{
+        padding: 0.5rem;
+        min-height: 20dvh;
+    }
+
+    .major_section{
+        margin: 1rem 0rem;
+    }
+
+    .major_slider ul{
+        gap: 0.5rem;
+        padding: 1rem 0.5rem;
+    }
+
+    .major_slider ul li{
+        width: 21%;
+        min-height: 5dvh;
+        padding: 0.5rem;
+        font-size: smaller;
+    }
+
+    .major_slider ul li img{
+        margin: 0.5rem auto 1rem auto;
+    }
+
+    .major_slider ul li h3{
+        margin: 0.5rem 0rem;
+        font-size: 1.2rem;
+    }
+
+    .my_mortage_home{
+        padding: 1rem 5rem;
+    }
+
+    .my_mortage_home section{
+        top: 25%;
+        left: 6rem;
+    }
+
+    .my_mortage_home section h2{
+        font-size: 3rem;
+    }
+
+    .my_mortage_home section span{
+        font-size: 1rem;
+    }
+
+    .mid_way_toggle{
+        padding: 0.5rem 0.5rem 2rem 0.5rem;
+    }
+
+    .mid_way_toggle h2{
+        font-size: 1.4rem;
+        margin: 0rem 0rem 2rem 0rem;
+        padding: 0.4rem 0.1rem;
+    }
+
+    .mid_way_toggle ul{
+        gap: 0.5rem;
+    }
+
+    .mid_way_toggle ul li{
+        /* width: 30%; */
+        padding: 1rem 2rem;
+        font-size: smaller;
+    }
+
+    .mid_way_toggle ul li:nth-child(even){
+        transform: scale(1.05);
+    }
+
+    .mid_way_toggle ul li:hover{
+        transform: scale(1.05) !important;
+    }
+
+    .mid_way_toggle ul li img{
+        height: 150px;
+    }
+
+    .mid_way_toggle ul li h3{
+        font-size: 1.2rem;
+        margin: 0.5rem 0rem;
+    }
+
+
+
+}
+
+@media (max-width:900px) {
+    #major_mid_section{
+        margin: 2rem 0rem;
+    }
+
+    .major_section{
+        margin: 0.5rem 0rem;
+    }
+
+    .major_slider ul{
+        gap: 0.5rem;
+        padding: 0.8rem 0.5rem;
+    }
+
+    /* .major_slider ul li{
+        width: 21%;
+    } */
+
+    .major_slider ul li img{
+        height: 50px;
+        margin: 0rem auto 0.5rem auto;
+    }
+
+    .major_slider ul li span{
+        display: none;
+    }
+
+    .major_slider ul li h3{
+        margin: 0.5rem 0rem;
+        font-size: 1rem;
+    }
+
+    .my_mortage_home{
+        padding: 1.5rem 3rem;
+    }
+
+    .my_mortage_home section{
+        top: 25%;
+        left: 4rem;
+    }
+
+    .my_mortage_home section h2{
+        font-size: 2.5rem;
+    }
+
+    .my_mortage_home section span{
+        font-size: 0.9rem;
+    }
+
+    .mid_way_toggle{
+        padding: 0.3rem 0.5rem 2rem 0.3rem;
+    }
+
+    .mid_way_toggle h2{
+        font-size: 1.3rem;
+        margin: 0rem 0rem 1.5rem 0rem;
+    }
+
+    .mid_way_toggle ul{
+        gap: 0.5rem;
+    }
+
+    .mid_way_toggle ul li{
+        padding: 1rem 1.5rem;
+        font-size: 0.7rem;
+    }
+
+    .mid_way_toggle ul li img{
+        height: 120px;
+    }
+
+    .mid_way_toggle ul li h3{
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width:650px) {
+    .major_slider ul li{
+        width: 18%;
+    }
+
+    .major_slider ul li img{
+        height: 35px;
+    }
+
+    .major_slider ul li h3{
+        margin: 0rem;
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+
+    .my_mortage_home{
+        padding: 1.5rem 1rem 1.5rem 0.5rem;
+    }
+
+    .my_mortage_home section{
+        top: 35%;
+        left: 1.5rem;
+    }
+
+    .my_mortage_home section h2{
+        font-size: 2rem;
+        margin: 0rem;
+    }
+
+    .my_mortage_home section span{
+        font-size: 0.7rem;
+    }
+
+    .mid_way_toggle{
+        padding: 0rem 0rem 1.5rem 0rem;
+    }
+
+    .mid_way_toggle h2{
+        font-size: 1.2rem;
+        padding: 0.3rem 0.1rem;
+        margin: 0rem 0rem 1rem 0rem;
+    }
+
+    .mid_way_toggle ul{
+        gap: 0.5rem;
+        padding: 0rem 1rem;
+    }
+
+    .mid_way_toggle ul li{
+        padding: 1rem 1.3rem;
+        font-size: 0.6rem;
+    }
+
+    .mid_way_toggle ul li img{
+        height: 70px;
+    }
+
+    .mid_way_toggle ul li h3{
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (max-width:500px) {
+    .major_slider ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1rem 0.5rem;
+        gap: 1rem;
+    }
+
+    .major_slider ul li{
+        width: 40%;
+    }
+
+    .major_slider ul li span{
+        display: block;
+        font-size: 0.5rem;
+    }
+
+    .major_slider ul li img{
+        height: 40px;
+    }
+
+    .major_slider ul li h3{
+        margin: 0.5rem 0rem;
+        font-size: 0.9rem;
+    }
+
+    /* .my_mortage_home{
+        padding: 1.5rem 1rem 1.5rem 0.5rem;
+    } */
+
+    .my_mortage_home section{
+        top: 35%;
+        left: 1.2rem;
+    }
+
+    .my_mortage_home section h2, .my_mortage_home section span{
+        width: 85%;
+    }
+
+    .my_mortage_home section h2{
+        font-size: 1.8rem;
+    }
+
+    .my_mortage_home section span{
+        font-size: 0.6rem;
+    }
+
+    .mid_way_toggle{
+        padding: 0rem 0rem 1.5rem 0rem;
+    }
+
+    .mid_way_toggle h2{
+        font-size: 1.3rem;
+        padding: 0.3rem 0.1rem;
+        margin: 0rem 0rem 1rem 0rem;
+    }
+
+    .mid_way_toggle ul{
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding: 0rem 1rem;
+    }
+
+    .mid_way_toggle ul li:nth-child(even){
+        background-color: transparent;
+        box-shadow: none;
+        transform: scale(1);
+    }
+
+    .mid_way_toggle ul li:hover{
+        background-color: transparent !important;
+        box-shadow: none !important;
+        transform: scale(1) !important;
+    }
+
+    .mid_way_toggle ul li{
+        width: 100%;
+        padding: 1rem 3rem;
+        font-size: 0.8rem;
+    }
+
+
+    .mid_way_toggle ul li img{
+        height: auto;
+    }
+
+    .mid_way_toggle ul li h3{
+        font-size: 1.1rem;
+    }
+
+}
+
+@media (max-width:400px) {
+
+    .major_slider ul{
+        padding: 1rem 2rem;
+    }
+
+    .major_slider ul li span{
+        display: none;
+    }
+
+    .major_slider ul li img{
+        height: 35px;
+    }
+
+    .major_slider ul li h3{
+        margin: 0.1rem 0rem;
+        font-size: 0.7rem;
+    }
+
+    .my_mortage_home section{
+        top: 30%;
+    }
+
+    .my_mortage_home section h2, .my_mortage_home section span{
+        width: 80%;
+    }
+
+    .my_mortage_home section h2{
+        font-size: 1.3rem;
+    }
+
+    .my_mortage_home section span{
+        color: gray;
+        font-style: italic;
+        font-size: 0.5rem;
+    }
+
+    .mid_way_toggle{
+        padding: 0rem 0rem 1.5rem 0rem;
+    }
+
+    .mid_way_toggle h2{
+        font-size: 1.1rem;
+        text-transform: capitalize;
+    }
+
+    .mid_way_toggle ul li{
+        padding: 1rem 2rem;
+        font-size: 0.7rem;
+    }
+
+    .mid_way_toggle ul li h3{
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width:360px) {
+
+    .major_slider ul{
+        padding: 0.5rem 0.3rem;
+    }
+
+    .major_slider ul li img{
+        height: 30px;
+    }
+
+    .major_slider ul li h3{
+        margin: 0.1rem 0rem;
+        font-weight: 500;
+    }
+
+    .my_mortage_home section{
+        top: 25%;
+    }
+
+    .my_mortage_home section h2, .my_mortage_home section span{
+        width: 70%;
+    }
+
+    .my_mortage_home section h2{
+        font-size: 1.2rem;
+    }
+
+    .mid_way_toggle{
+        padding: 0rem 0rem 1.5rem 0rem;
+    }
+
+    .mid_way_toggle ul li{
+        padding: 1rem 0.5rem;
+    }
+
+}

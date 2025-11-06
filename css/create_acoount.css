@@ -1,0 +1,253 @@
+.container {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  height: 500px;
+  perspective: 1500px;
+}
+
+.card a:hover {
+  color: gold;
+}
+
+.inner-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(rgba(21, 45, 74, 0.9), rgba(21, 45, 74, 0.9)),
+    url(../gallery/pics/form_nav_bar.png);
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+  border-radius: 5px;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.card h2 {
+  font-weight: 545;
+  text-align: center;
+  margin: 0.5rem 0rem 1.5rem 0rem;
+  text-transform: uppercase;
+  word-spacing: 0.5rem;
+  color: yellow;
+}
+
+.card a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  margin-top: 13px;
+}
+
+.card_contents p b{
+    font-size: smaller;
+    /* color: var(--third-opt); */
+    color: yellowgreen;
+    font-weight: 540;
+}
+
+.input-box {
+  width: 100%;
+  background: transparent;
+  border: 0px solid silver;
+  border-width: 0px 0px 1px 0px;
+  margin: 0.3rem 0rem;
+  /* height: 32px; */
+  padding: 0.1rem 0.2rem;
+  outline: none;
+  /* text-align: center; */
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.input-box:focus{
+    border-color: white !important;
+}
+
+.input-box::placeholder{
+    text-align: center;
+}
+
+.card_contents select{
+    background-color:rgba(21, 45, 74, 0.9);
+    color: white;
+} 
+
+.submit-btn {
+  position: relative;
+  width: 100%;
+  background-color: whitesmoke;
+  color: black;
+  /* border: 1px solid white; */
+  margin: 2rem 0rem 1rem 0rem;
+  /* height: 32px; */
+  /* font-size: 12px; */
+  border-radius: 20px;
+  padding: 0.3rem 0.1rem;
+  outline: none;
+  /* color: #fff; */
+  cursor: pointer;
+  font-size: large;
+}
+
+.submit-btn:hover {
+  transform: scale(1.02);
+  background-color: white;
+}
+
+.submit-btn::after {
+  content: "\27a4";
+  color: #333;
+  line-height: 32px;
+  font-size: 17px;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+  right: -1px;
+  top: -1px;
+}
+
+.btn{
+    display: flex;
+    margin: 2rem auto 1rem auto;
+    font-weight: 500;
+    color: limegreen;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    color: lime;
+}
+
+.card_checkbox_contents{
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    font-size: 0.7rem;
+    color: whitesmoke;
+    margin-top: 1rem;
+}
+
+#confirm_checkbox{
+    /* Remove default appearance for custom styling */
+  /* appearance: none; */
+  /* -webkit-appearance: none;  */
+  /* -moz-appearance: none; */
+
+  /* Define your custom border */
+  border: 1px solid transparent;
+  accent-color: var(--secondary-color);
+
+  /* Optional: Add other styling for a custom look */
+  width: 20px;
+  height: 15px;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+/*  */
+@media (max-width:1030px) {
+  .card {
+    height: 450px;
+  }
+
+  .card-front, .card-back {
+    background-size: fill;
+    padding: 0.5rem 1rem;
+  }
+
+  .card_checkbox_contents{
+      font-size: 0.6rem;
+  }
+
+}
+
+@media (max-width:900px) {
+  .card {
+    height: 400px;
+  }
+
+  .card-front, .card-back {
+    padding: 0.5rem 2rem;
+  }
+
+  .card_checkbox_contents{
+      font-size: 0.5rem;
+  }
+
+  .card a {
+    font-size: 12px;
+    margin-top: 12px;
+  }
+
+  .card_contents p b{
+      font-size: 0.7rem;
+  }
+
+  .input-box {
+    margin: 0.1rem 0rem;
+    padding: 0.1rem 0.2rem;
+    font-size: 0.8rem;
+  }
+
+}
+
+@media (max-width:800px) {
+  .card-front, .card-back {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width:650px) {
+  .card {
+    height: 380px;
+  }
+
+  .btn{
+      display: flex;
+      margin: 1.5rem auto 1rem auto;
+  }
+
+  .card_checkbox_contents{
+    margin-top: 0;
+  }
+
+  .submit-btn {
+    margin: 1.5rem 0rem 0rem 0rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width:500px) {
+  .card h2{
+    text-transform: capitalize;
+  }
+
+  .btn{
+    font-size: 1rem;
+  }
+}
