@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/landing.css">
+    <link rel="stylesheet" href="./css/create_acoount.css">
+    <link rel="stylesheet" href="./css/major_section.css">
+    <link rel="stylesheet" href="./css/slide_animation.css">
+    <title>Regency TrustBank</title>
+    <script src="./js/jquery.3.7.0.js"></script>
+</head>
+
+<div id="app_loading">
+    <p></p>
+    <img src="./icons/favicon.png" alt="Regency Trust">
+</div>
+
+<body>
+    
+    <!--  -->
+    <nav>
+        <section id="nav_top">
+            <a href="./">
+                <img id="desk_logo" src="./icons/logo.png" alt="Regency Trust">
+                <img id="mobile_logo" src="./icons/favicon.png" alt="Regency Trust">
+            </a>
+
+            <div id="log_btn_container">
+                <a href="./?account=sign_up">Create account</a>
+                <a href="./login/auth.html?origin=true&loc=true">Log In</a>
+                <menu id="mobileMenu">&#8801;</menu>
+            </div>
+        </section>
+
+        <section id="nav_mid">
+            <ul>
+                <section>
+                    <li class="toggle_main_menu">
+                        <a href="./?account=sign_in">Online Banking</a>
+                    </li>
+
+                    <li class="toggle_main_menu mortgages">
+                        <a href="#mortgages_loans">Mortgages & Loans</a>
+                        <div class="nav_float_menu">
+
+                            <div class="nav_drop_menu">
+
+                                <div class="nav_menu_explore">
+                                    <h4>Home Loans</h4>
+                                    <a href="./?nav=home_loans">
+                                        <img src="./gallery/pics/home_loan.webp" alt="Home Loan">
+                                        <span>Explore</span>
+                                    </a>
+                                </div>
+
+                                <div class="nav_menu_explore">
+                                    <h4>Personal Loans</h4>
+                                    <a href="./?nav=personal_loans">
+                                        <img src="./gallery/pics/personal_loan.avif" alt="Personal Loan">
+                                        <span>Explore</span>
+                                    </a>
+                                </div>
+
+                                <div class="nav_menu_explore">
+                                    <h4>Auto Loans</h4>
+                                    <a href="./?nav=auto_loans">
+                                        <img src="./gallery/pics/auto_loan.webp" alt="Auto Loan">
+                                        <span>Explore</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="toggle_main_menu business">
+                        <a href="#business">Business & SMEs</a>
+                        <div class="nav_float_menu">
+                            <div class="nav_drop_menu">
+                                <div class="nav_menu_explore">
+                                    <h4>Entrepreneurs</h4>
+                                    <a href="./?nav=entrepreneurs">
+                                        <img src="./gallery/pics/explore_enterprenurs.png" alt="Explore Entrepreneurs">
+                                        <span>Explore</span>
+                                    </a>
+                                </div>
+
+                                <div class="nav_menu_explore">
+                                    <h4>Imports/Exports</h4>
+                                    <a href="./?nav=import_export">
+                                        <img src="./gallery/pics/explore_exporters.jpg" alt="Explore import and export">
+                                        <span>Explore</span>
+                                    </a>
+                                </div>
+
+                                <div class="nav_menu_explore">
+                                    <h4>Retail Outlets</h4>
+                                    <a href="./?nav=retail">
+                                        <img src="./gallery/pics/explore_retailers.avif" alt="Explore retail business">
+                                        <span>Explore</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="toggle_main_menu corporate">
+                        <a href="#corporate">Corporate Banking</a>
+                        <div class="nav_float_menu">
+                            <div class="nav_drop_menu">
+
+                                <div class="nav_menu_explore">
+                                    <h4>Credit Lines</h4>
+                                    <a href="./?nav=credit_line">
+                                        <img src="./gallery/pics/explore_credit_line.jpg" alt="Explore credit line">
+                                        <span>Explore</span>
+                                    </a>
+                                </div>
+
+                                <div class="nav_menu_explore">
+                                    <h4>Debit Lines</h4>
+                                    <a href="./?nav=debit_line">
+                                        <img src="./gallery/pics/explore_debit_line.jpg" alt="Explore debit line">
+                                        <span>Explore</span>
+                                    </a>
+                                </div>
+
+                                <div class="nav_menu_explore">
+                                    <h4>Contributions</h4>
+                                    <a href="./?nav=contribution">
+                                        <img src="./gallery/pics/explore_contribution_line.jpg" alt="Explore contribution line">
+                                        <span>Explore</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="toggle_main_menu commercial">
+                        <a href="#commercial">Commercial Banking</a>
+                        <div class="nav_float_menu">
+                            <div class="nav_drop_menu">
+
+                                <div class="nav_menu_explore">
+                                    <h4>Private Savings</h4>
+                                    <a href="./?nav=private_savings">
+                                        <img src="./gallery/pics/explore_private_savings.jpg" alt="Explore private savings">
+                                        <span>Explore</span>
+                                    </a>
+                                </div>
+
+                                <div class="nav_menu_explore">
+                                    <h4>Target Savings</h4>
+                                    <a href="./?nav=target_savings">
+                                        <img src="./gallery/pics/explore_target_savings.jpg" alt="Explore target savings">
+                                        <span>Explore</span>
+                                    </a>
+                                </div>
+
+                                <div class="nav_menu_explore">
+                                    <h4>Annual Cash</h4>
+                                    <a href="./?nav=annual_cash">
+                                        <img src="./gallery/pics/explore_annual_savings.jpg" alt="Explore annual cash">
+                                        <span>Explore</span>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="toggle_main_menu insurance">
+                        <a href="#insurance_investments">Insurance & Investments</a>
+                        <div class="nav_float_menu">
+                            <div class="nav_drop_menu">
+
+                                <div class="nav_menu_explore">
+                                    <h4>Accidents Disasters</h4>
+                                    <a href="./?nav=accident_insurance">
+                                        <img src="./gallery/pics/explore_accidents_insurance.webp" alt="Explore accident insurance">
+                                        <span>Explore</span>
+                                    </a>
+                                </div>
+
+                                <div class="nav_menu_explore">
+                                    <h4>Life Insurance</h4>
+                                    <a href="./?nav=life_insurance">
+                                        <img src="./gallery/pics/explore_life_insurance.jpg" alt="Explore life insurance">
+                                        <span>Explore</span>
+                                    </a>
+                                </div>
+
+                                <div class="nav_menu_explore">
+                                    <h4>Car Payments</h4>
+                                    <a href="./?nav=car_insurance">
+                                        <img src="./gallery/pics/explore_car_insurance.jpg" alt="Explore car payment">
+                                        <span>Explore</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="toggle_main_menu csr">
+                        <a href="#corporate_social_responsibility">CSR</a>
+                        <div class="nav_float_menu">
+                            <div class="nav_drop_menu">
+                                
+                                <div class="nav_menu_explore">
+                                    <h4>Sports/Entertainments</h4>
+                                    <a href="./?nav=sports">
+                                        <img src="./gallery/pics/explore_sports.png" alt="Explore sports">
+                                        <span>Explore</span>
+                                    </a>
+                                </div>
+
+                                <div class="nav_menu_explore">
+                                    <h4>Education/Craftsmanship</h4>
+                                    <a href="./?nav=education">
+                                        <img src="./gallery/pics/explore_education.jpg" alt="Explore education">
+                                        <span>Explore</span>
+                                    </a>
+                                </div>
+
+                                <div class="nav_menu_explore">
+                                    <h4>Community Services</h4>
+                                    <a href="./?nav=community_service">
+                                        <img src="./gallery/pics/explore_community_service.jpg" alt="Explore community service">
+                                        <span>Explore</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+                </section>
+            </ul>
+        </section>
+
+        <section id="nav_bottom">
+            <marquee id="nav_marquee" behavior="scroll" scrollamount="5" direction="left" onmouseover="this.stop()" onmouseout="this.start()"></marquee>
+        </section>
+    </nav>
+
+    <!--  -->
+
+    <main id="app_main">
+        <section id="landing_main">
+            <video muted autoplay loop src="./gallery/vids/corporate_534564.mp4"></video>
+            
+            <div id="landing_container">
+
+                <section id="landing_form_section">
+
+                        <div class="container">
+                            <div class="card">
+                                <div class="inner-box" id="3d-card">
+                                <div class="card-front">
+                                    <h2>Create Account</h2>
+
+                                    <div class="card_contents" id="card_front_content">
+                                        <p>
+                                            <b>First Name:</b>
+                                            <input type="text" class="input-box input_front" id="firstName" placeholder="Enter first name"/>
+                                        </p>
+                                        
+                                        <p>
+                                            <b>Middle Name:</b>
+                                            <input type="text" class="input-box input_front" id="middleName" placeholder="Enter middle name"/>
+                                        </p>
+
+                                        <p>
+                                            <b>Last Name:</b>
+                                            <input type="text" class="input-box input_front" id="lastName" placeholder="Enter last name"/>
+                                        </p>
+                                        
+                                        <p>
+                                            <b>E-mail:</b>
+                                            <input type="email" class="input-box input_front" id="emailAddress" placeholder="Enter email address"/>
+                                        </p>
+
+                                        <p>
+                                            <b>Account Type:</b>
+                                            <select class="input-box input_front">
+                                                <option value="">...</option>
+                                                <option value="personal">Personal account</option>
+                                                <option value="corporate">Corporate account</option>
+                                            </select>
+                                        </p>
+                                    </div>
+
+                                    <button type="button" class="btn" onclick="openRegister()">Continue >></button>
+
+                                    <div class="card_checkbox_contents">
+                                        <span>
+                                            <b>NB: </b>
+                                            <i>
+                                                Please,ensure that all the details you entered on this form are correct. It might be used for background/security verification.
+                                            </i>
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                                <div class="card-back">
+                                    <h2>Basic Information</h2>
+                                    <form id="reg_form">
+                                        
+                                        <div class="card_contents" id="card_back_content">
+                                            <p>
+                                                <b>Gender:</b>
+                                                <select class="input-box input_back" id="gender">
+                                                    <option value="">...</option>
+                                                    <option value="male">Male</option>
+                                                    <option value="female">Female</option>
+                                                    <option value="other">Others</option>
+                                                </select>
+                                            </p>
+
+                                            <p>
+                                                <b>Phone No:</b>
+                                                <input type="tel" class="input-box input_back" id="phone" placeholder="Enter phone number">
+                                            </p>
+
+                                            <p>
+                                                <b>Date of Birth:</b>
+                                                <input type="date" class="input-box input_back" id="dateBirth" placeholder="Enter date of birth">
+                                            </p>
+
+                                            <p>
+                                                <b>ID Number:</b>
+                                                <input type="text" class="input-box input_back" id="id_number" placeholder="Enter national identification number">
+                                            </p>
+                                        </div>
+
+                                        <div class="card_checkbox_contents">
+                                            <input id="confirm_checkbox" checked type="checkbox"/> 
+                                            <span>I have read and consented to the <b>Privacy Policy</b> and <b>Terms & Conditions</b></span>
+                                        </div>
+
+                                        <button type="submit" class="submit-btn">Open account</button>
+                                    </form>
+                                    <button type="button" class="btn" onclick="openLogin()"><< Go Back</button>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                </section>
+
+                <section id="landing_side_bar">
+                    <h1 translate="no">Online Banking</h1>
+                    <div id="side_bar_content">
+                        <h2>Say hello to convenient banking</h2>
+                        <p>Explore our services and choose the right account for you</p>
+                        <!-- <p>Regency Trust Bank Edinburgh</p> -->
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- mid section -->
+
+        <section id="major_mid_section">
+            <div class="major_section major_slider">
+                <ul>
+                    <li>
+                        <a href="./?promo=mortage">
+                            <img src="./gallery/pics/mid_mortage.webp" alt="Mortage home">
+                            <h3>Find mortgage happiness</h3>
+                            <span>With a down payment as low as 2.99%</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./?promo=checking">
+                            <img src="./gallery/pics/mid_account.avif" alt="checking account">
+                            <h3>Unlock convenient checking</h3>
+                            <span>Discover the benefits of our checking accounts and choose the right one for you</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./?promo=cards">
+                            <img src="./gallery/pics/mid_cards.webp" alt="credit cards">
+                            <h3>Find a credit card</h3>
+                            <span>Low intro rate, cash back, rewards and more</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./?promo=interest">
+                            <h3>Interest rates today</h3>
+                            <img src="./gallery/pics/mid_interest_rate.avif" alt="interest rate">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="major_section my_mortage_home">
+                <section>
+                    <h2>A home of your own</h2>
+                    <span>With low down payment options on a fixed-rate mortgage</span>
+                </section>
+                <img src="./gallery/pics/mortage_home_banner.avif" alt="own your home">
+            </div>
+
+            <div class="major_section mid_way_toggle">
+                <h2>Financial guidance and support</h2>
+                <ul>
+                    <li class="scale_list_items">
+                        <a href="./?guidance=goals">
+                            <img src="./gallery/pics/borrow_options.jpg" alt="your goals">
+                            <h3>Your Money. Your Goals. Your Future.</h3>
+                            <span>Setting financial goals is a powerful first step you can take today</span>
+                        </a>
+                    </li>
+
+                    <li class="scale_list_items">
+                        <a href="./?guidance=borrowings">
+                            <img src="./gallery/pics/explore_options.avif" alt="borrow money">
+                            <h3>Explore your borrowing options</h3>
+                            <span>Find solutions for you and your financial needs, before you borrow</span>
+                        </a>
+                    </li>
+
+                    <li class="scale_list_items">
+                        <a href="./?guidance=money">
+                            <img src="./gallery/pics/money_safe.avif" alt="money safe">
+                            <h3>Help keep your money safe</h3>
+                            <span>Learn how to spot the latest scams and help avoid them</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="major_section auto_slide">
+                <h2>Serving our customers and communities</h2>
+
+                <!--  -->
+
+                <div class="slideshow-container">
+
+                     <p id="slideshow_paragrap">
+                        It doesn't happen with one transaction, in one day on the job, or in one quarter. It's earned relationship by relationship.
+                    </p>
+
+                    <section id="slideshow_container">
+                        <div class="mySlides fade">
+                            <div class="numbertext">Who we are</div>
+                            <img src="./gallery/pics/comunity_service.jpg" alt="community service">
+                            <div class="text">
+                                <b>Regency Trust</b> helps strengthen communities through inclusion, economic empowerment, and sustainability.
+                            </div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">Why we're committed to communities</div>
+                            <img src="./gallery/pics/who_we_are.png" alt="community service">
+                            <div class="text">
+                                We don't just serve our communities—we are our communities. We're committed to helping customers and neighborhoods across the country thrive.
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div>
+
+                <!--  -->
+            </div>
+
+            <div class="major_section metric_charts">
+                <h2>Our Service Metric Charts</h2>
+                <ul>
+                    <li>
+                        <img class="metric_charts_png" src="./icons/rating.svg" alt="Ratings">
+                        
+                        <section>
+                            <p>
+                                <h4>7.5%</h4>
+                                <span>APY*</span>
+                            </p>
+
+                            <p>
+                                <h5>HIGH YIELD SAVINGS</h5>
+                                <i>Our high yield savings rate</i>
+                            </p>
+                        </section>
+
+                        <a href="./?metric=featured">
+                            <button>
+                                <span>FEATURED</span>
+                                <img src="./icons/rating.svg" alt="Ratings">
+                            </button>
+                        </a>
+                    </li>
+
+                    <li>
+                        <img class="metric_charts_png" src="./icons/savings.svg" alt="savings">
+                        
+                        <section>
+                            <p>
+                                <h4>6.5%</h4>
+                                <span>APY*</span>
+                            </p>
+
+                            <p>
+                                <h5>18 MONTH CERTIFICATE</h5>
+                                <i>Certified bank rates</i>
+                            </p>
+                        </section>
+
+                        <a href="./?metric=savings">
+                            <button>
+                                <span>SAVINGS</span>
+                                <img src="./icons/savings.svg" alt="savings">
+                            </button>
+                        </a>
+                    </li>
+
+                    <li>
+                        <img class="metric_charts_png" src="./icons/card.svg" alt="cards">
+                        
+                        <section>
+                            <p>
+                                <h4>3.8%</h4>
+                                <span>APR*</span>
+                            </p>
+
+                            <p>
+                                <h5>CREDIT CARDS</h5>
+                                <i>Credit issuer's rates</i>
+                            </p>
+                        </section>
+
+                        <a href="./?metric=credit">
+                            <button>
+                                <span>CREDIT</span>
+                                <img src="./icons/card.svg" alt="cards">
+                            </button>
+                        </a>
+                    </li>
+
+                    <li>
+                        <img class="metric_charts_png" src="./icons/mortage.svg" alt="mortage">
+                        
+                        <section>
+                            <p>
+                                <h4>8.4%</h4>
+                                <span>APR*</span>
+                            </p>
+
+                            <p>
+                                <h5>LOANS</h5>
+                                <i>Standard Loan Rates</i>
+                            </p>
+                        </section>
+
+                        <a href="./?metric=mortage">
+                            <button>
+                                <span>MORTGAGE</span>
+                                <img src="./icons/mortage.svg" alt="mortage">
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <ul>
+            <li>
+                <h4>CUSTOMER SERVICES</h4>
+                <a href="./?service=about_us">About us</a>
+                <a href="./?service=whistle_blower">Whistle Blower</a>
+                <a href="#./?service=dispense_error">Dispense Error</a>
+                <a href="./?service=faq">Frequently Asked Questions</a>
+                <a href="./?service=token">Create Hardware Token Pin</a>
+            </li>
+
+            <li>
+                <h4>Protect Yourself</h4>
+                <a href="./?service=scam_alert">Scam Alert</a>
+                <a href="./?service=replace_card">Replace Your Card</a>
+                <a href="./?service=online_security">Internet Banking Security</a>
+                <a href="./?service=phishing">Email Fraud & Phishing</a>
+                <a href="./?service=card_security">Card Security</a>
+                <a href="./?service=regulators">Regulatory Authorities</a>
+            </li>
+
+            <li>
+                <h4>Quick Link</h4>
+                <a href="./?service=realtime_access">Realtime Access</a>
+                <a href="./?service=business_portal">Business Portal</a>
+                <a href="./?service=reactivate_account">Reactivate Account</a>
+                <a href="./?service=lc">Letter of Credit Form</a>
+                <a href="./?service=cheque_booklet">Request Cheque Book</a>
+                <a href="./?service=travel_portal">Travel Portal</a>
+            </li>
+
+            <li>
+                <img src="./icons/play_store_badge.png" alt="Play Store">
+                <img src="./icons/apple_store_badge.png" alt="Apple Store">
+            </li>
+        </ul>
+
+        <div id="foot_liner">
+            <h5>CONNECT WITH US:</h5>
+            <span>
+                <img src="./icons/twitter.png" alt="twitter">
+                <img src="./icons/facebook.png" alt="facebook">
+                <img src="./icons/instagram.png" alt="instagram">
+                <img src="./icons/linkedin.png" alt="linkedin">
+                <img src="./icons/wechat.png" alt="wechat">
+                <img src="./icons/youtube.png" alt="youtube">
+            </span>
+        </div>
+    </footer>
+
+    <!--  -->
+
+    <script src="./js/url.js"></script>
+    <script src="./js/landing.js"></script>
+    <script src="./js/slide_animation.js"></script>
+</body>
+</html>
