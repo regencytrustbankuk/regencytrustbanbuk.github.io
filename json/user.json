@@ -1,0 +1,18 @@
+{
+    "id":"6906041f9e9f6",
+    "firstName":"Jeremy",
+    "middleName":"Arda",
+    "lastName":"Akbas",
+    "email":"drjeremyakbas@gmail.com",
+    "dateBirth":"15/06/1975",
+    "phoneNumber":"+447349457837",
+    "homeAddress":"26 Castle St, Edinburgh EH2 3HT",
+    "accountNumber":842862560075,
+    "passCode":208922,
+    "pinCode":5791,
+    "balance":762828.89,
+    "currency":"GBP",
+    "currencySymbol":"&pound;",
+    "photo":"1.jpg",
+    "customerCare":"+447349457837"
+}
