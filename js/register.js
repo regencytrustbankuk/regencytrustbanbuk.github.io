@@ -1,11 +1,13 @@
 // 
-if (regAcoount != null && regMail != null) {
+
+if (regAccount != null && regMail != null) {
+
     let regPage = `
         <section id="reg_page_container">
             <h1>Account Registration</h1>
 
             <div id="reg_user_msg">
-                <h2>Hi, ${atob(regAcoount)}</h2>
+                <h2>Hi, ${atob(regAccount)}</h2>
 
                 <p>We have received for request to open Banking account with us.</p>
                 <p>Our <b>Customer Care</b> unit will review your documents and get back to via your e-mail <i><b>${atob(regMail)}</b></i></p>
