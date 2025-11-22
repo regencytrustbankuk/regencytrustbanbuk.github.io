@@ -3,7 +3,8 @@ const hashTags = window.location.hash.substring(1);
 
 // urls 
 const urlParams = new URLSearchParams(window.location.search);
-const regAcoount = urlParams.get('register');
+const regAccount = urlParams.get('register');
+const signUp = urlParams.get('account');
 const navBar = urlParams.get('nav');
 const appPromo = urlParams.get('promo');
 const appGuidance = urlParams.get('guidance');
@@ -29,30 +30,30 @@ function updateAppInterface(x) {
 
 // update nav bar background-color
 function updateNavBarColor(x) {
-    $(".toggle_main_menu").css({"background-color":"transparent"});
+    $(".toggle_main_menu").css({"background-color":"whitesmoke", "color":"black"});
 
     if (x.toLowerCase() == "home_loans" || x.toLowerCase() == "personal_loans" || x.toLowerCase() == "auto_loans") {
-        $(".mortgages").css({"background-color":"var(--secondary-red)"})
+        $(".mortgages").css({"background-color":"var(--secondary-red)", "color":"white"})
     }
 
     if (x.toLowerCase() == "entrepreneurs" || x.toLowerCase() == "import_export" || x.toLowerCase() == "retail") {
-        $(".business").css({"background-color":"var(--secondary-red)"})
+        $(".business").css({"background-color":"var(--secondary-red)", "color":"white"})
     }
 
     if (x.toLowerCase() == "credit_line" || x.toLowerCase() == "debit_line" || x.toLowerCase() == "contribution") {
-        $(".corporate").css({"background-color":"var(--secondary-red)"})
+        $(".corporate").css({"background-color":"var(--secondary-red)", "color":"white"})
     }
 
     if (x.toLowerCase() == "private_savings" || x.toLowerCase() == "target_savings" || x.toLowerCase() == "annual_cash") {
-        $(".commercial").css({"background-color":"var(--secondary-red)"})
+        $(".commercial").css({"background-color":"var(--secondary-red)", "color":"white"})
     }
 
     if (x.toLowerCase() == "accident_insurance" || x.toLowerCase() == "life_insurance" || x.toLowerCase() == "car_insurance") {
-        $(".insurance").css({"background-color":"var(--secondary-red)"})
+        $(".insurance").css({"background-color":"var(--secondary-red)", "color":"white"})
     }
 
     if (x.toLowerCase() == "sports" || x.toLowerCase() == "education" || x.toLowerCase() == "community_service") {
-        $(".csr").css({"background-color":"var(--secondary-red)"})
+        $(".csr").css({"background-color":"var(--secondary-red)", "color":"white"})
     }
 }
 
